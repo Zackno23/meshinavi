@@ -8,9 +8,9 @@
                 <a class="nav-link" href="{{ route('restaurants.index') }}">Home <span class="sr-only">(current)</span></a>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="カテゴリー">
-            <input class="form-control mr-sm-2" type="search" placeholder="お店の名前">
+        <form class="form-inline my-2 my-lg-0" mechod="GET" action="{{ route('restaurants.index') }}">
+            <input class="form-control mr-sm-2" type="search" name='category' placeholder="カテゴリー">
+            <input class="form-control mr-sm-2" type="search" name='name' placeholder="お店の名前">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
     </div>
